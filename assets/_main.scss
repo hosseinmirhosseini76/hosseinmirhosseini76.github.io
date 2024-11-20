@@ -1,0 +1,32 @@
+//! fonts
+@import './fonts/style.css';
+
+body {
+    background-color: var(--dark-color) !important;
+}
+
+* {
+    scroll-behavior: smooth !important;
+}
+
+.hide-scrollbar {
+    overflow: auto !important; /* Enable scrolling */
+    scrollbar-width: none !important; /* Firefox */
+    -ms-overflow-style: none !important; /* Internet Explorer and Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none !important; /* Chrome, Safari, and Opera */
+}
+
+@for $i from 1 through 30 {
+    .mll-#{$i} {
+        margin-left: #{$i * 10}px !important;
+    }
+}
+
+.no-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}

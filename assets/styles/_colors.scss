@@ -1,0 +1,43 @@
+:root {
+    --dark-color: #2f2b33;
+    --light-color: #faf8eb;
+    --green-color: #a7be34;
+    --orange-color: #ff3f20;
+}
+
+$darkColor: #2f2b33;
+$lightColor: #faf8eb;
+$greenColor: #a7be34;
+$orangeColor: #ff3f20;
+
+.my-text-dark {
+    color: $darkColor !important;
+}
+
+.my-text-light {
+    color: $lightColor !important;
+}
+
+.my-text-green {
+    color: $greenColor !important;
+}
+
+.my-text-orange {
+    color: $orangeColor !important;
+}
+
+.my-bg-dark {
+    background-color: $darkColor !important;
+}
+
+.my-bg-light {
+    background-color: $lightColor !important;
+}
+
+.my-bg-green {
+    background-color: $greenColor !important;
+}
+
+.my-bg-orange {
+    background-color: $orangeColor !important;
+}
