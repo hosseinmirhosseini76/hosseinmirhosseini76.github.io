@@ -26,7 +26,7 @@ const items = ref([
         logo: '/images/interactivo.logo.svg',
         title: 'Front-End Team Lead',
         companyName: 'Interactivo.io LLC',
-        location: 'New Your, US',
+        location: 'New York, US',
         types: [
             {
                 text: 'Full Time',
