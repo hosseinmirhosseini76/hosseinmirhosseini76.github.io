@@ -6,7 +6,7 @@
             <AnimaedText text="Hossein" :speed="100" />
             <AnimaedText text="Mirhosseini" />
         </div>
-        <div class="mouse-icon v-col-12 pa-0 my-bg-dark text-center">
+        <div class="mouse-icon v-col-12 pa-0 bg-transparent text-center">
             <Icon
                 icon="solar:mouse-minimalistic-outline"
                 width="36"
