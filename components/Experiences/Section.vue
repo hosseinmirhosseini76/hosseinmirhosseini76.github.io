@@ -223,7 +223,6 @@ const items = ref([
         description: [
             'Vue.js was utilized to develop large-scale web applications from the ground up for managing mining vehicles.',
             'There are numerous features available for managing all aspects related to vehicles used in mines.',
-            'There are numerous features available for managing all aspects related to vehicles used in mines.',
         ],
         skills: [
             'Vue.js 2',
