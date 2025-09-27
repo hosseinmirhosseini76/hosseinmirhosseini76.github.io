@@ -108,8 +108,8 @@
                         v-if="!!item.links"
                         class="v-col-12 d-flex justify-end flex-columns"
                     >
-                        <template v-for="(link, linkIndex) in item.links">
-                            <NuxtLink :href="link.link" :key="linkIndex" target="_blank" >
+                        <template v-for="link in item.links">
+                            <NuxtLink :href="link.link" target="_blank" >
                                 <v-chip
                                     variant="flat"
                                     :color="link.color"
