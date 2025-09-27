@@ -23,6 +23,72 @@ import { ref } from 'vue'
 
 const items = ref([
     {
+        logo: '/images/algorift.png',
+        title: 'Senior Front-End Dev',
+        companyName: 'Algorfit.ai',
+        location: 'Brisbane, AU',
+        types: [
+            {
+                text: 'Full Time',
+                color: 'amber',
+            },
+            {
+                text: 'Remote',
+                color: 'red',
+            },
+        ],
+        from: 'Feb 2025',
+        to: 'Sep 2025',
+        description: [
+            'Designed and integrated features utilizing the Vue.js framework alongside BootstrapVue to improve both the functionality and user experience of the web application.',
+            'Create a Monorepo for all core project apps; this approach guarantees high code readability and straightforward future scaling.',
+            'Development and design of functional, purpose-driven components tailored for specific applications throughout various aspects of the project, following Figma designs.',
+            'Refactoring massive and legacy code bases using best practices for better maintainability and scalability.',
+            'Making the back-office and end-user applications multilingual with Vue-i18n so that all users around the world can easily use them.',
+        ],
+        skills: [
+            'Monorepo',
+            'Vue.js 2, 3',
+            'Bootstrap-Vue',
+            'resumablejs',
+            'sentry',
+            'Pinia',
+            'Vue-i18n',
+            'Vue-router',
+            'Sass',
+            'axios',
+            'Lottiefiles',
+            'chart.js',
+            'pusher-js',
+            'lodash',
+            'moment',
+            'jquery',
+            'Jira',
+        ],
+        links: [
+            {
+                title: 'Company Website',
+                link: 'https://algorift.ai',
+                color: 'lime',
+            },
+            {
+                title: 'Seller App',
+                link: 'https://seller.algorift.ai',
+                color: 'cyan-lighten-3',
+            },
+            {
+                title: 'Affiliate App',
+                link: 'https://affiliate.algorift.ai',
+                color: 'cyan-lighten-1',
+            },
+            {
+                title: 'Admin App',
+                link: 'https://admin.algorift.ai',
+                color: 'cyan-darken-2',
+            },
+        ],
+    },
+    {
         logo: '/images/interactivo.logo.svg',
         title: 'Front-End Team Lead',
         companyName: 'Interactivo.io LLC',
@@ -40,14 +106,14 @@ const items = ref([
         from: 'Aug 2022',
         to: 'Oct 2024',
         description: [
-            "Developed and implemented features using the Vue.js framework with the assistance of Vuetify.js in order to enhance the functionality and user experience of the web application.",
-            "Migration of the end-user app from Vue.js 2 to version 3 to improve performance and keep it up-to-date.",
-            "Refactoring massive and legacy code bases using best practices for better maintainability and scalability.",
-            "Making the back-office and end-user applications multilingual with Vue-i18n so that all users around the world can easily use them.",
-            "Enhanced development efficiency and accelerated speed by separating the back office application from the end-user application.",
-            "To ensure inclusivity and reach a wider audience, the website was made more accessible based on the WCAG (Web Content Accessibility Guidelines) guidelines.",
-            "Designing the entire back-office application in XD and converting it into code to ensure a better user experience and ease of use.",
-            "Redesigning the logo and logotype.",
+            'Developed and implemented features using the Vue.js framework with the assistance of Vuetify.js in order to enhance the functionality and user experience of the web application.',
+            'Migration of the end-user app from Vue.js 2 to version 3 to improve performance and keep it up-to-date.',
+            'Refactoring massive and legacy code bases using best practices for better maintainability and scalability.',
+            'Making the back-office and end-user applications multilingual with Vue-i18n so that all users around the world can easily use them.',
+            'Enhanced development efficiency and accelerated speed by separating the back office application from the end-user application.',
+            'To ensure inclusivity and reach a wider audience, the website was made more accessible based on the WCAG (Web Content Accessibility Guidelines) guidelines.',
+            'Designing the entire back-office application in XD and converting it into code to ensure a better user experience and ease of use.',
+            'Redesigning the logo and logotype.',
         ],
         skills: [
             'Vue.js 2, 3',
@@ -71,14 +137,14 @@ const items = ref([
             {
                 title: 'Company Website',
                 link: 'https://interactivo.io/',
-                color: "blue",
+                color: 'blue',
             },
             {
                 title: 'Main App',
                 link: 'https://main.interactivo.io',
-                color: "cyan",
+                color: 'cyan',
             },
-        ]
+        ],
     },
     {
         logo: '/images/ryca.jpg',
@@ -98,12 +164,12 @@ const items = ref([
         from: 'Jan 2021',
         to: 'Aug 2022',
         description: [
-            "Nuxt.js and Vue.js combined with Vuetify.js were used to create three large-scale web applications from the SCRATCH.",
-            "Components and features writing with a high degree of accuracy and quality.",
-            "Designing a role-based administration panel for Carvan app that can be easily used by anyone.",
-            "UI/UX principles are used in all apps designed according to best practices.",
-            "Implemented Sentry tool for reporting and collecting bugs automatically.",
-            "Managing the Front-End team to make the application more efficient and effective.",
+            'Nuxt.js and Vue.js combined with Vuetify.js were used to create three large-scale web applications from the SCRATCH.',
+            'Components and features writing with a high degree of accuracy and quality.',
+            'Designing a role-based administration panel for Carvan app that can be easily used by anyone.',
+            'UI/UX principles are used in all apps designed according to best practices.',
+            'Implemented Sentry tool for reporting and collecting bugs automatically.',
+            'Managing the Front-End team to make the application more efficient and effective.',
         ],
         skills: [
             'Nuxt.js 2',
@@ -124,19 +190,19 @@ const items = ref([
             {
                 title: 'Carvann Website',
                 link: 'https://carvann.ir/',
-                color: "teal-accent-3",
+                color: 'teal-accent-3',
             },
             {
                 title: 'Carvann Panel',
                 link: 'https://panel.carvann.ir/',
-                color: "teal",
+                color: 'teal',
             },
             {
                 title: 'MS Market',
                 link: 'https://msmarket.ir/',
-                color: "purple",
+                color: 'purple',
             },
-        ]
+        ],
     },
     {
         logo: '/images/superz.png',
@@ -153,10 +219,10 @@ const items = ref([
         to: 'Sep 2020',
         description: [
             'Developed SSR web applications that display categorized and optimized products from all online supermarkets available.',
-            "Confronted with a wide range of challenges in developing SSR, we ultimately managed to resolve them all.",
+            'Confronted with a wide range of challenges in developing SSR, we ultimately managed to resolve them all.',
             "We've separated the mobile app from the desktop app to enhance performance and improve maintainability.",
-            "Implemented Sentry tool for reporting and collecting bugs automatically.",
-            "All of the apps were created with the principles of UI/UX design in mind.",
+            'Implemented Sentry tool for reporting and collecting bugs automatically.',
+            'All of the apps were created with the principles of UI/UX design in mind.',
         ],
         skills: [
             'SSR',
@@ -174,9 +240,9 @@ const items = ref([
             {
                 title: 'Superz App',
                 link: 'https://superz.ir/',
-                color: "var(--orange-color)",
+                color: 'var(--orange-color)',
             },
-        ]
+        ],
     },
     {
         logo: '/images/uniplus.png',
@@ -192,9 +258,9 @@ const items = ref([
         from: 'Jul 2019',
         to: 'Oct 2019',
         description: [
-            "Developed an app aimed at helping university students enhance their daily lives.",
-            "There are many features that can simplify the process of finding a roommate, travel companion, classmate, and more.",
-            "Designed app with Vue.js with high quality and maintainable code base."
+            'Developed an app aimed at helping university students enhance their daily lives.',
+            'There are many features that can simplify the process of finding a roommate, travel companion, classmate, and more.',
+            'Designed app with Vue.js with high quality and maintainable code base.',
         ],
         skills: [
             'Vue.js 2',
@@ -239,14 +305,14 @@ const items = ref([
             {
                 title: 'Fidar Company Website',
                 link: 'https://fdni.ir/fdni/',
-                color: "white",
+                color: 'white',
             },
             {
                 title: 'VSM Detail',
                 link: 'https://fdni.ir/fdni/project/vsm/',
-                color: "yellow",
+                color: 'yellow',
             },
-        ]
+        ],
     },
     {
         logo: '/images/cert.png',
@@ -262,10 +328,10 @@ const items = ref([
         from: 'Sep 2018',
         to: 'Apr 2019',
         description: [
-            "I began my career journey from that point, exploring various opportunities and gaining knowledge in multiple technologies.",
-            "As a designer, I have created numerous banners, posters, certificates, and other materials.",
-            "As a developer, I worked on a large-scale application called ParsPam, which manages and controls remote access. For more details, please see the links below.",
-            "I learned a great deal about web development, including topics such as browsers, requests, compatibility issues, cyber attacks, and more.",
+            'I began my career journey from that point, exploring various opportunities and gaining knowledge in multiple technologies.',
+            'As a designer, I have created numerous banners, posters, certificates, and other materials.',
+            'As a developer, I worked on a large-scale application called ParsPam, which manages and controls remote access. For more details, please see the links below.',
+            'I learned a great deal about web development, including topics such as browsers, requests, compatibility issues, cyber attacks, and more.',
         ],
         skills: [
             'Vue.js 2',
@@ -283,14 +349,14 @@ const items = ref([
             {
                 title: 'ParsPam App Detail',
                 link: 'https://fdni.ir/fdni/project/pam/',
-                color: "yellow-darken-1",
+                color: 'yellow-darken-1',
             },
             {
                 title: 'CERT SUT website',
                 link: 'https://cert.shahroodut.ac.ir/',
-                color: "light-blue-darken-4",
+                color: 'light-blue-darken-4',
             },
-        ]
+        ],
     },
 ])
 </script>

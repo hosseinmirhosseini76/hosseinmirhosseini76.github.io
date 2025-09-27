@@ -92,17 +92,36 @@
                     v-show="!hideContent"
                     class="content-section my-text-light px-6 py-3 text-Exo2-Medium"
                 >
-                    <div v-for="desc in item.description">✅ {{ desc }}</div>
+                    <div v-for="desc, descIndex in item.description" :key="descIndex" >✅ {{ desc }}</div>
                     <div v-if="!!item.skills" class="v-col-12 px-0">
-                        <v-chip v-for="(skill, skillIndex) in item.skills" variant="outlined" color="var(--green-color)" class="mr-2 mb-2 text-Exo2-Regular">
+                        <v-chip
+                            v-for="(skill, skillIndex) in item.skills"
+                            :key="skillIndex"
+                            variant="outlined"
+                            color="var(--green-color)"
+                            class="mr-2 mb-2 text-Exo2-Regular"
+                        >
                             {{ skill }}
                         </v-chip>
                     </div>
-                    <div v-if="!!item.links" class="v-col-12 d-flex justify-end flex-columns">
-                        <template v-for="link in item.links">
-                            <NuxtLink :href="link.link" target="_blank">
-                                <v-chip variant="flat" :color="link.color" class="ml-3" size="large">
-                                    <Icon icon="solar:link-round-angle-outline" width="20" height="20" class="mr-2"/>
+                    <div
+                        v-if="!!item.links"
+                        class="v-col-12 d-flex justify-end flex-columns"
+                    >
+                        <template v-for="(link, linkIndex) in item.links">
+                            <NuxtLink :href="link.link" :key="linkIndex" target="_blank" >
+                                <v-chip
+                                    variant="flat"
+                                    :color="link.color"
+                                    class="ml-3"
+                                    size="large"
+                                >
+                                    <Icon
+                                        icon="solar:link-round-angle-outline"
+                                        width="20"
+                                        height="20"
+                                        class="mr-2"
+                                    />
                                     {{ link.title }}
                                 </v-chip>
                             </NuxtLink>

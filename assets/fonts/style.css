@@ -24,7 +24,8 @@
     font-family: 'Exo2-BlackItalic';
     src: url('/fonts/exo2/Exo2-BlackItalic.eot');
     src:
-        url('/fonts/exo2/Exo2-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/exo2/Exo2-BlackItalic.eot?#iefix')
+            format('embedded-opentype'),
         url('/fonts/exo2/Exo2-BlackItalic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
@@ -35,7 +36,8 @@
     font-family: 'Exo2-ExtraLight';
     src: url('/fonts/exo2/Exo2-ExtraLight.eot');
     src:
-        url('/fonts/exo2/Exo2-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/exo2/Exo2-ExtraLight.eot?#iefix')
+            format('embedded-opentype'),
         url('/fonts/exo2/Exo2-ExtraLight.woff') format('woff');
     font-weight: 200;
     font-style: normal;
@@ -68,7 +70,8 @@
     font-family: 'Exo2-BoldItalic';
     src: url('/fonts/exo2/Exo2-BoldItalic.eot');
     src:
-        url('/fonts/exo2/Exo2-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/exo2/Exo2-BoldItalic.eot?#iefix')
+            format('embedded-opentype'),
         url('/fonts/exo2/Exo2-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
@@ -79,7 +82,8 @@
     font-family: 'Exo2-ExtraBoldItalic';
     src: url('/fonts/exo2/Exo2-ExtraBoldItalic.eot');
     src:
-        url('/fonts/exo2/Exo2-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/exo2/Exo2-ExtraBoldItalic.eot?#iefix')
+            format('embedded-opentype'),
         url('/fonts/exo2/Exo2-ExtraBoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
@@ -90,7 +94,8 @@
     font-family: 'Exo2-LightItalic';
     src: url('/fonts/exo2/Exo2-LightItalic.eot');
     src:
-        url('/fonts/exo2/Exo2-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/exo2/Exo2-LightItalic.eot?#iefix')
+            format('embedded-opentype'),
         url('/fonts/exo2/Exo2-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
@@ -101,7 +106,8 @@
     font-family: 'Exo2-ExtraLightItalic';
     src: url('/fonts/exo2/Exo2-ExtraLightItalic.eot');
     src:
-        url('/fonts/exo2/Exo2-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/exo2/Exo2-ExtraLightItalic.eot?#iefix')
+            format('embedded-opentype'),
         url('/fonts/exo2/Exo2-ExtraLightItalic.woff') format('woff');
     font-weight: 200;
     font-style: italic;
@@ -123,7 +129,8 @@
     font-family: 'Exo2-MediumItalic';
     src: url('/fonts/exo2/Exo2-MediumItalic.eot');
     src:
-        url('/fonts/exo2/Exo2-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/exo2/Exo2-MediumItalic.eot?#iefix')
+            format('embedded-opentype'),
         url('/fonts/exo2/Exo2-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
@@ -167,7 +174,8 @@
     font-family: 'Exo2-ThinItalic';
     src: url('/fonts/exo2/Exo2-ThinItalic.eot');
     src:
-        url('/fonts/exo2/Exo2-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/exo2/Exo2-ThinItalic.eot?#iefix')
+            format('embedded-opentype'),
         url('/fonts/exo2/Exo2-ThinItalic.woff') format('woff');
     font-weight: 100;
     font-style: italic;
@@ -200,7 +208,8 @@
     font-family: 'Exo2-SemiBoldItalic';
     src: url('/fonts/exo2/Exo2-SemiBoldItalic.eot');
     src:
-        url('/fonts/exo2/Exo2-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/exo2/Exo2-SemiBoldItalic.eot?#iefix')
+            format('embedded-opentype'),
         url('/fonts/exo2/Exo2-SemiBoldItalic.woff') format('woff');
     font-weight: 600;
     font-style: italic;

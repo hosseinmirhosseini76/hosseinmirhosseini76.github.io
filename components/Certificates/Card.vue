@@ -2,10 +2,7 @@
     <div v-if="props.item" class="certificates-item v-col-12 mt-4 no-select">
         <Box hideLayer>
             <div class="text-Exo2-ExtraBold main-title">
-                <a
-                    :href="item.link"
-                    class="my-text-light"
-                >
+                <a :href="item.link" class="my-text-light">
                     {{ item.title }}
                 </a>
             </div>

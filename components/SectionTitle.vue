@@ -1,8 +1,5 @@
 <template>
-    <span
-        :class="[classes]"
-        class="section-title font-ps2p no-select"
-    >
+    <span :class="[classes]" class="section-title font-ps2p no-select">
         {{ props.text }}
     </span>
 </template>
@@ -12,9 +9,9 @@ const props = defineProps({
     text: String,
     classes: {
         type: String,
-        default: function() {
+        default: function () {
             return 'my-text-light'
-        }
+        },
     },
 })
 </script>

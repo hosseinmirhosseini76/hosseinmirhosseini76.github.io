@@ -4,8 +4,7 @@
             <div class="text font-ps2p my-text-light no-select">
                 <div id="whoami">&lt;info</div>
                 <div :class="$vuetify.display.mdAndDown ? 'mll-5' : 'mll-10'">
-                    field="<span class="my-text-green">Front-End Dev</span
-                    >"
+                    field="<span class="my-text-green">Front-End Dev</span>"
                 </div>
                 <div :class="$vuetify.display.mdAndDown ? 'mll-5' : 'mll-10'">
                     lovely-framework="<span class="my-text-orange">Vue.js</span
@@ -41,8 +40,8 @@
                             "
                         >
                             'Pinia',
-                        </div>
-                    </span>]"
+                        </div> </span
+                    >]"
                 </div>
                 <div :class="$vuetify.display.mdAndDown ? 'mll-5' : 'mll-10'">
                     birth-date="<span class="my-text-green">09/25/1997</span>"
@@ -78,8 +77,8 @@
                             "
                         >
                             'Futsal'
-                        </div>
-                    </span>]"
+                        </div> </span
+                    >]"
                 </div>
                 <div>/&gt;</div>
             </div>
