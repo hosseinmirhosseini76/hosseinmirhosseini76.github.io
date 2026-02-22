@@ -40,11 +40,13 @@ const items = ref([
         from: 'Feb 2025',
         to: 'Sep 2025',
         description: [
-            'Designed and integrated features utilizing the Vue.js framework alongside BootstrapVue to improve both the functionality and user experience of the web application.',
-            'Create a Monorepo for all core project apps; this approach guarantees high code readability and straightforward future scaling.',
-            'Development and design of functional, purpose-driven components tailored for specific applications throughout various aspects of the project, following Figma designs.',
-            'Refactoring massive and legacy code bases using best practices for better maintainability and scalability.',
-            'Making the back-office and end-user applications multilingual with Vue-i18n so that all users around the world can easily use them.',
+            'Designed and maintained a large-scale npm workspaces monorepo hosting 6 independent Vue.js SPAs and a shared library of 382 reusable components, ensuring consistency and maximizing code reuse across Seller, Affiliate, Admin, and Buyer panels.',
+            'Created a full Design Studio / Landing Page Builder with 30+ customizable components, enabling affiliates to build and publish product pages through a multi-step visual interface.',
+            'Made all applications multilingual using Vue-i18n (supporting 6 languages), engineered a backend-driven translation loader with localStorage caching and hot-swapping capabilities—eliminating page reloads during language switches.',
+            'Developed a comprehensive multi-network discovery system supporting 3 external partner networks, featuring network-specific product/brand cards, storefront views, and bulk affiliate link generation—enabling affiliates to efficiently promote products across multiple external platforms.',
+            'Created a system allowing sellers to discover, search, and filter external affiliates not yet on the platform, with single/bulk assignment to custom lists and detailed list management views—expanding seller reach and partnership opportunities.',
+            'Architected a full admin control panel with 5 key modules: Stats dashboard, API Pricing, Network management (enable/disable external networks), API Usage logs, and API Key management—providing complete oversight of the expanded partners infrastructure.',
+            'Built real-time sync monitoring tools for expanded partners data, including run/stop operations, sync history, and stale process killing.',
         ],
         skills: [
             'Monorepo',
@@ -68,29 +70,34 @@ const items = ref([
         links: [
             {
                 title: 'Company Website',
-                link: 'https://algorift.ai',
+                link: 'https://algorift.io',
                 color: 'lime',
             },
             {
                 title: 'Seller App',
-                link: 'https://seller.algorift.ai',
+                link: 'https://seller.algorift.io',
                 color: 'cyan-lighten-3',
             },
             {
                 title: 'Affiliate App',
-                link: 'https://affiliate.algorift.ai',
+                link: 'https://affiliate.algorift.io',
                 color: 'cyan-lighten-1',
             },
             {
                 title: 'Admin App',
-                link: 'https://admin.algorift.ai',
+                link: 'https://admin.algorift.io',
                 color: 'cyan-darken-2',
+            },
+            {
+                title: 'Doc App',
+                link: 'https://doc.algorift.io',
+                color: 'orange-lighten-1',
             },
         ],
     },
     {
         logo: '/images/interactivo.logo.svg',
-        title: 'Front-End Team Lead',
+        title: 'Senior Front-End Dev',
         companyName: 'Interactivo.io LLC',
         location: 'New York, US',
         types: [
