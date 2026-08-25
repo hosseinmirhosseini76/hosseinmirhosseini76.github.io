@@ -1,84 +1,100 @@
 <template>
-    <div class="v-col-12 pa-0 navigation-items-wrapper my-bg-dark">
-        <v-col lg="8" md="11" cols="12" class="mx-auto">
-            <v-row no-gutters justify="center">
-                <template v-for="item in items">
-                    <div
-                        class="v-col-lg-4 v-col-md-4 v-col-12 navigation-item font-ps2p my-text-light no-select"
-                    >
-                        <Box @clicked="goToSection(item.to)">
-                            {{ item.text }}
-                        </Box>
-                    </div>
-                </template>
-            </v-row>
-        </v-col>
-    </div>
+    <nav class="site-nav" aria-label="Primary">
+        <div class="site-nav-bar">
+            <a href="#about" class="brand font-ps2p my-text-light">SHM</a>
+
+            <ul class="desktop-links">
+                <li v-for="item in items" :key="item.to">
+                    <a :href="item.to" class="nav-chip font-ps2p">
+                        <span>{{ item.text }}</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <button
+                    class="menu-toggle"
+                    type="button"
+                    :aria-expanded="menuOpen"
+                    aria-controls="mobile-nav-panel"
+                    :aria-label="menuOpen ? 'Close menu' : 'Open menu'"
+                    @click="menuOpen = !menuOpen"
+                >
+                    <span class="menu-toggle-box" aria-hidden="true">
+                        <span :class="['burger', { open: menuOpen }]"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <Teleport to="body">
+            <div
+                v-show="menuOpen"
+                class="mobile-nav-backdrop"
+                @click="menuOpen = false"
+            />
+            <div
+                id="mobile-nav-panel"
+                class="mobile-nav-panel"
+                :class="{ open: menuOpen }"
+                :aria-hidden="!menuOpen"
+            >
+                <p class="mobile-kicker font-ps2p my-text-green">Navigate</p>
+                <ul class="mobile-links">
+                    <li v-for="item in items" :key="`m-${item.to}`">
+                        <a
+                            :href="item.to"
+                            class="mobile-link"
+                            @click="menuOpen = false"
+                        >
+                            <Box>
+                                <span class="font-ps2p my-text-light">
+                                    {{ item.text }}
+                                </span>
+                            </Box>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </Teleport>
+    </nav>
 </template>
 
 <script setup lang="ts">
-//! packages
-import { ref } from 'vue'
-import Box from '@/components/Box.vue'
+const menuOpen = ref(false)
 
-//! utils
-const router = useRouter()
+const items = [
+    { text: 'About', to: '#about' },
+    { text: 'Highlights', to: '#highlights' },
+    { text: 'Experience', to: '#experiences' },
+    { text: 'Education', to: '#educations' },
+    { text: 'Contact', to: '#contact-me' },
+]
 
-const items = ref([
-    {
-        icon: 'fluent:person-info-24-regular',
-        text: 'Who Am I',
-        to: '/#whoami',
-    },
-    {
-        icon: 'fluent:hat-graduation-sparkle-24-regular',
-        text: 'Educations',
-        to: '/#educations',
-    },
-    {
-        icon: 'fluent:briefcase-24-regular',
-        text: 'Experiences',
-        to: '/#experiences',
-    },
-    /* {
-        icon: 'fluent:brain-circuit-24-regular',
-        text: 'Skills',
-        to: '/#skills',
-    }, */
-    {
-        icon: 'fluent:certificate-24-regular',
-        text: 'Certificates',
-        to: '/#certificates',
-    },
-    /* {
-        icon: 'fluent:book-globe-24-regular',
-        text: 'Publications',
-        to: '/#publications',
-    }, */
-    /* {
-        icon: 'solar:cup-outline',
-        text: 'Awards',
-        to: '/#awards',
-    }, */
-    {
-        icon: 'solar:phone-rounded-linear',
-        text: 'Contact Me',
-        to: '/#contact-me',
-    },
-])
+onMounted(() => {
+    window.addEventListener('keydown', onEscape)
+    window.addEventListener('resize', onResize)
+})
 
-const goToSection = (to: string) => {
-    router.push(`${to}`)
-}
-</script>
+onUnmounted(() => {
+    window.removeEventListener('keydown', onEscape)
+    window.removeEventListener('resize', onResize)
+    document.body.style.overflow = ''
+})
 
-<style lang="scss">
-.navigation-items-wrapper {
-    padding-top: 5rem !important;
-    padding-bottom: 5rem !important;
-    .navigation-item {
-        padding: 10px 20px !important;
-        font-size: clamp(1rem, 1.3vw, 2.7rem);
+const onEscape = (event: KeyboardEvent) => {
+    if (event.key === 'Escape') {
+        menuOpen.value = false
     }
 }
-</style>
+
+const onResize = () => {
+    if (window.innerWidth >= 961) {
+        menuOpen.value = false
+    }
+}
+
+watch(menuOpen, (open) => {
+    document.body.style.overflow = open ? 'hidden' : ''
+})
+</script>

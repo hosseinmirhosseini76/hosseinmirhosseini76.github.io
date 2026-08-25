@@ -12,7 +12,7 @@
                     class="v-col-6 text-Exo2-LightItalic info-text my-text-light"
                 >
                     {{ props.item.from }}
-                    <span class="my-text-green text-Exo2-ExtraBold">>></span>
+                    <span class="my-text-green text-Exo2-ExtraBold">–</span>
                     {{ props.item.to }}
                 </div>
                 <div

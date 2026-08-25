@@ -1,12 +1,23 @@
 //! fonts
 @import './fonts/style.css';
+@import './styles/_nav.scss';
 
 body {
     background-color: var(--dark-color) !important;
+    color: var(--light-color);
+}
+
+*:focus-visible {
+    outline: 2px solid var(--green-color);
+    outline-offset: 3px;
 }
 
 * {
     scroll-behavior: smooth !important;
+}
+
+html {
+    scroll-padding-top: 72px;
 }
 
 .hide-scrollbar {

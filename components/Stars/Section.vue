@@ -1,10 +1,18 @@
 <template>
-    <div class="canvas-wrapper">
-        <canvas />
-        <div class="text font-ps2p text-center my-text-light no-select">
-            <AnimaedText text="Seyed" :speed="100" />
-            <AnimaedText text="Hossein" :speed="100" />
-            <AnimaedText text="Mirhosseini" />
+    <header class="canvas-wrapper" aria-label="Introduction">
+        <canvas aria-hidden="true" />
+        <div class="hero-copy text-center no-select">
+            <div class="text font-ps2p my-text-light">
+                <AnimaedText text="Seyed" :speed="100" />
+                <AnimaedText text="Hossein" :speed="100" />
+                <AnimaedText text="Mirhosseini" />
+            </div>
+            <p class="role text-Exo2-Bold my-text-green">
+                Senior Front-End Engineer
+            </p>
+            <p class="meta text-Exo2-Medium my-text-light">
+                Vue.js · Nuxt.js · TypeScript · 6+ Years
+            </p>
         </div>
         <div class="mouse-icon v-col-12 pa-0 bg-transparent text-center">
             <Icon
@@ -12,9 +20,11 @@
                 width="36"
                 height="36"
                 class="my-text-light"
+                aria-hidden="true"
             />
+            <span class="visually-hidden">Scroll for more</span>
         </div>
-    </div>
+    </header>
 </template>
 
 <script setup>
@@ -238,14 +248,37 @@ onMounted(() => {
         height: 100%;
     }
 
+    .hero-copy {
+        position: relative;
+        z-index: 2;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 18px;
+        pointer-events: none;
+    }
+
     .text {
         display: flex;
-        z-index: 99999;
-        height: inherit;
         font-size: clamp(1.7rem, 4vw, 6rem);
         font-weight: 600;
         flex-direction: column;
         justify-content: center;
+        line-height: 1.1;
+    }
+
+    .role {
+        margin-top: clamp(1rem, 2vw, 1.75rem);
+        font-size: clamp(1.05rem, 2vw, 1.75rem);
+        letter-spacing: 0.02em;
+    }
+
+    .meta {
+        margin-top: 0.4rem;
+        font-size: clamp(0.9rem, 1.4vw, 1.15rem);
+        opacity: 0.9;
     }
 
     .mouse-icon {
@@ -253,6 +286,19 @@ onMounted(() => {
         bottom: 30px;
         left: 0;
         right: 0;
+        z-index: 2;
+    }
+
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
     }
 }
 </style>

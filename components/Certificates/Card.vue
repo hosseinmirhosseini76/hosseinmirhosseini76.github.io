@@ -2,7 +2,12 @@
     <div v-if="props.item" class="certificates-item v-col-12 mt-4 no-select">
         <Box hideLayer>
             <div class="text-Exo2-ExtraBold main-title">
-                <a :href="item.link" class="my-text-light">
+                <a
+                    :href="item.link"
+                    class="my-text-light"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     {{ item.title }}
                 </a>
             </div>
@@ -11,7 +16,12 @@
                 <span class="my-text-green">({{ item.date }})</span>
             </div>
             <div class="v-col-12">
-                <v-img width="95%" :src="item.image" class="mx-auto" />
+                <v-img
+                    width="95%"
+                    :src="item.image"
+                    class="mx-auto"
+                    :alt="`${item.title} certificate`"
+                />
             </div>
         </Box>
     </div>
