@@ -93,23 +93,28 @@ const items = [
         links: [
             {
                 title: 'Company Website',
-                link: 'https://algorift.ai',
+                link: 'https://algorift.io',
                 color: 'lime',
             },
             {
                 title: 'Seller App',
-                link: 'https://seller.algorift.ai',
+                link: 'https://seller.algorift.io',
                 color: 'cyan-lighten-3',
             },
             {
                 title: 'Affiliate App',
-                link: 'https://affiliate.algorift.ai',
+                link: 'https://affiliate.algorift.io',
                 color: 'cyan-lighten-1',
             },
             {
                 title: 'Admin App',
-                link: 'https://admin.algorift.ai',
+                link: 'https://admin.algorift.io',
                 color: 'cyan-darken-2',
+            },
+            {
+                title: 'Doc App',
+                link: 'https://doc.algorift.io',
+                color: 'orange-lighten-1',
             },
         ],
     },
