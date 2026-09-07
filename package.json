@@ -11,19 +11,19 @@
         "format": "npx prettier --write ."
     },
     "dependencies": {
-        "nuxt": "^3.13.2",
-        "vue": "^3.4.29",
-        "vue-router": "^4.3.3",
-        "vuetify-nuxt-module": "^0.18.3"
+        "nuxt": "^3.21.1",
+        "vue": "^3.5.28",
+        "vue-router": "^4.6.4",
+        "vuetify-nuxt-module": "^0.18.9"
     },
     "devDependencies": {
-        "@iconify/vue": "^4.1.2",
-        "@pinia/nuxt": "^0.7.0",
-        "axios": "^1.7.7",
-        "pinia": "^2.2.6",
-        "prettier": "^3.3.3",
-        "sass": "^1.80.6",
-        "sass-loader": "^16.0.3"
+        "@iconify/vue": "^4.3.0",
+        "@pinia/nuxt": "^0.11.2",
+        "axios": "^1.13.5",
+        "pinia": "^3.0.3",
+        "prettier": "^3.8.1",
+        "sass": "^1.97.3",
+        "sass-loader": "^16.0.7"
     },
     "packageManager": "pnpm@11.17.0+sha512.cca3cea332ad254bb84145f966d19f4879615210346fc92c79a047f23a0d7b3cca3c3792f0076ba1f1831d277efbcf0a9119b31a9a60eca7fb3d6231f331ef72"
 }

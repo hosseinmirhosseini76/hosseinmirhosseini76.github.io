@@ -33,28 +33,28 @@
 <script setup lang="ts">
 const items = [
     {
-        value: '10+ Years',
-        label: 'Shipping production front-end work across startups, product companies, and remote teams',
+        value: '9+ Years',
+        label: 'Shipping production web apps across startups, product companies, and remote teams',
     },
     {
         value: '7 Roles',
-        label: 'A path from founder and developer to team lead, senior, and full-stack engineer',
+        label: 'From founder and front-end developer to team lead, senior, and full-stack engineer',
     },
     {
         value: 'International',
-        label: 'Remote collaboration with teams in Australia, the United States, and Iran',
+        label: 'Remote and hybrid work with teams in Australia, the United States, and Iran',
     },
     {
-        value: 'Vue & Nuxt',
-        label: 'Deep specialization across Vue 2/3, Nuxt, and large-scale component architecture',
+        value: 'Full-Stack',
+        label: 'Vue / Nuxt on the front, Laravel APIs, Docker, Nginx, and cloud deploy in production',
     },
     {
         value: 'Greenfield + Legacy',
-        label: 'Building products from scratch and modernizing live codebases, including Vue 2 → 3',
+        label: 'Building products from scratch and modernizing live systems, including Vue 2 → 3',
     },
     {
         value: 'Product Range',
-        label: 'SaaS platforms, e-commerce, admin systems, SSR marketplaces, and customer-facing applications',
+        label: 'E-commerce, affiliate SaaS, admin panels, SSR marketplaces, and customer-facing apps',
     },
 ]
 </script>

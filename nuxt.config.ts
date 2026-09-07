@@ -40,9 +40,9 @@ export default defineNuxtConfig({
         },
     },
     ssr: true,
-    compatibilityDate: '2024-04-03',
+    compatibilityDate: '2025-09-07',
     devtools: { enabled: false },
-    modules: ['vuetify-nuxt-module', ['@pinia/nuxt', { disableVuex: true }]],
+    modules: ['vuetify-nuxt-module', '@pinia/nuxt'],
     css: ['~/assets/_main.scss'],
     vite: {
         css: {

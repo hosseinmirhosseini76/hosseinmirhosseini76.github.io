@@ -47,24 +47,12 @@
             "button.foreground": "#000000",
             "statusBarItem.remoteHoverForeground": "#000000"
         },
-        "titleBar.activeBackground": "#d43a3a",
-        "titleBar.activeForeground": "#ffffff",
-        "titleBar.inactiveBackground": "#d43a3a",
-        "titleBar.inactiveForeground": "#ffffff90",
         "statusBarItem.warningBackground": "#d43a3a",
         "statusBarItem.warningForeground": "#ffffff",
         "statusBarItem.warningHoverBackground": "#d43a3a",
         "statusBarItem.warningHoverForeground": "#ffffff90",
-        "statusBarItem.remoteBackground": "#e14747",
-        "statusBarItem.remoteForeground": "#ffffff",
         "statusBarItem.remoteHoverBackground": "#ee5454",
         "statusBarItem.remoteHoverForeground": "#ffffff90",
-        "statusBar.background": "#d43a3a",
-        "statusBar.foreground": "#ffffff",
-        "statusBar.border": "#d43a3a",
-        "statusBar.debuggingBackground": "#d43a3a",
-        "statusBar.debuggingForeground": "#ffffff",
-        "statusBar.debuggingBorder": "#d43a3a",
         "statusBar.noFolderBackground": "#d43a3a",
         "statusBar.noFolderForeground": "#ffffff",
         "statusBar.noFolderBorder": "#d43a3a",
@@ -86,8 +74,6 @@
         "pickerGroup.foreground": "#e14747",
         "list.activeSelectionBackground": "#d43a3a4d",
         "panelTitle.activeBorder": "#e14747",
-        "activityBar.activeBorder": "#d43a3a",
-        "activityBarBadge.foreground": "#ffffff",
-        "activityBarBadge.background": "#d43a3a"
+        "activityBar.activeBorder": "#d43a3a"
     }
 }

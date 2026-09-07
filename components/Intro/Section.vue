@@ -14,24 +14,21 @@
             <div class="about-card">
                 <Box hideLayer>
                     <p class="role text-Exo2-ExtraBold my-text-light">
-                        Senior Front-End Engineer
+                        Full-Stack Developer
                     </p>
                     <p class="stack text-Exo2-Bold my-text-orange">
-                        Vue.js · Nuxt.js · TypeScript · JavaScript · Front-End
-                        Architecture
+                        Vue.js · Nuxt.js · Laravel · Docker · TypeScript
                     </p>
                     <p class="summary text-Exo2-Regular my-text-light">
-                        Senior Front-End Engineer with 6+ years of experience
+                        Full-Stack Developer with 9+ years of experience
                         building scalable web applications, SaaS platforms,
-                        administrative systems, and complex front-end
-                        architectures.
+                        e-commerce, and admin systems — from Vue/Nuxt
+                        front-ends to Laravel APIs and production deploy.
                     </p>
                     <p class="summary text-Exo2-Regular my-text-light">
-                        Specialized in Vue.js and Nuxt.js, with strong experience
-                        in large-scale apps, reusable component systems, monorepo
-                        architecture, legacy modernization, internationalization,
-                        and accessibility — including remote work with
-                        international teams.
+                        Strong in large-scale apps, reusable component systems,
+                        monorepo architecture, Docker/Nginx delivery, legacy
+                        modernization, and remote work with international teams.
                     </p>
 
                     <ul class="focus-list" aria-label="Core strengths">
@@ -118,9 +115,9 @@
 
 <script setup lang="ts">
 const strengths = [
-    'Large-scale front-end architecture',
-    'Reusable UI systems & shared libraries',
-    'Vue 2 → Vue 3 modernization',
+    'End-to-end product delivery (UI, API, deploy)',
+    'Vue / Nuxt architecture & reusable UI systems',
+    'Laravel APIs, Docker, and production operations',
     'Remote collaboration with international teams',
 ]
 </script>

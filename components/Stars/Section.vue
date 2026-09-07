@@ -8,10 +8,10 @@
                 <AnimaedText text="Mirhosseini" />
             </div>
             <p class="role text-Exo2-Bold my-text-green">
-                Senior Front-End Engineer
+                Full-Stack Developer
             </p>
             <p class="meta text-Exo2-Medium my-text-light">
-                Vue.js · Nuxt.js · TypeScript · 6+ Years
+                Vue.js · Nuxt.js · Laravel · 9+ Years
             </p>
         </div>
         <div class="mouse-icon v-col-12 pa-0 bg-transparent text-center">
