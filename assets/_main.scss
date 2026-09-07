@@ -1,6 +1,6 @@
 //! fonts
-@import './fonts/style.css';
-@import './styles/_nav.scss';
+@use './fonts/style.css';
+@use './styles/nav';
 
 body {
     background-color: var(--dark-color) !important;
